@@ -1,8 +1,20 @@
+:root {
+    --greenish: #20c997;
+}
+
 body {
-    margin          : 0px;
-    background-color: firebrick;
-    height          : 5000px;
-    font-family     : "Poppins", sans-serif;
+    margin             : 0px;
+    /* background-color: firebrick; */
+    height             : 5000px;
+    font-family        : "Poppins", sans-serif;
+    text-align         : center;
+}
+
+button {
+    font-size: 16px;
+    padding  : 15px 40px;
+    border   : var(--greenish) solid;
+    color    : white;
 }
 
 a {
@@ -10,10 +22,23 @@ a {
     color          : white;
 }
 
-.width80 {
-    width: 80%;
+ul {
+    list-style: none;
+    text-align: left;
+    padding   : 0px;
 }
 
+h3 span {
+    color: var(--greenish);
+}
+
+.width85 {
+    width : 85%;
+    margin: auto;
+}
+
+
+/* landing section start */
 .landing {
     height             : 100vh;
     position           : relative;
@@ -30,7 +55,7 @@ a {
     width           : 100%;
     box-sizing      : border-box;
     position        : fixed;
-    background-image   : linear-gradient(rgba(17, 20, 24, 0.8), rgba(17, 20, 24, 0.8));
+    background-image: linear-gradient(rgba(17, 20, 24, 0.8), rgba(17, 20, 24, 0.8));
 }
 
 .landing-nav ul {
@@ -44,10 +69,11 @@ a {
     transform      : translateX(-50%);
 }
 
-.landing-nav ul{
-    color: #20c997;
+.landing-nav ul {
+    color: var(--greenish);
 }
-/* problem it does not apply to the element in li>a ??????!!!!!!!!!! */
+
+/* problem it does not apply to the element in li>a */
 
 .landing-nav ul li {
     padding    : 10px 18px;
@@ -56,7 +82,7 @@ a {
 }
 
 .landing-nav ul li a:hover {
-    color: #20c997;
+    color: var(--greenish);
 }
 
 .landing-info {
@@ -77,7 +103,7 @@ a {
 .landing-info h1 {
     font-size  : 64px;
     font-weight: 600;
-    margin: 30px;
+    margin     : 30px;
 }
 
 .landing-info p {
@@ -86,19 +112,103 @@ a {
 }
 
 .landing-info button {
-    font-size  : 16px;
-    font-weight: 500;
-    border-radius: 25px;
-    padding: 15px 40px;
+    font-size       : 16px;
+    font-weight     : 500;
+    border-radius   : 25px;
+    padding         : 15px 40px;
     background-color: transparent;
-    border: #20c997 solid;
-    color: #20c997;
+    border          : var(--greenish) solid;
+    color           : var(--greenish);
 }
 
 .landing-info button:hover {
-    background-color: #20c997;
-    color: white;
-    transition: all 0.5s ease-in-out;
+    background-color: var(--greenish);
+    color           : white;
+    transition      : all 0.5s ease-in-out;
 }
-/* when hover out the effect is done instantaneously */
 
+/* problem when hover out the effect is not done instantaneously */
+
+
+/* landing section end */
+
+/* about section start */
+.about {
+    padding: 40px 0px;
+    padding: 4.5rem 0;
+}
+
+.about .width85 h2 {
+    font-size  : 36px;
+    font-weight: 600;
+    position   : relative;
+}
+
+.about .width85 h2::after {
+    content         : "";
+    background-color: var(--greenish);
+    height          : 2px;
+    width           : 6%;
+    position        : absolute;
+    bottom          : -10;
+    left            : 50%;
+    transform       : translateX(-50%);
+}
+
+.about .width85 footer {
+    margin: 30px 0px;
+}
+
+
+.about-text {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    padding        : 4rem 0;
+}
+
+.about-text article {
+    width     : 60%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-text article h3 {
+    font-size  : 28px;
+    font-weight: 600;
+}
+
+.about-text aside {
+    width          : 30%;
+    display        : flex;
+    flex-direction : column;
+    align-items    : flex-start;
+    justify-content: space-between;
+}
+
+.about-text aside ul li {
+    padding: 15px 0px;
+}
+
+.about-text aside ul li a {
+    color: var(--greenish);
+}
+
+.about-text aside button {
+    background-color: var(--greenish);
+    border-radius   : 25px;
+}
+
+.about-stats {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    color          : #6c757d;
+}
+
+.about-stats h3 {
+    font-size: 48px;
+    margin   : 5px 0px;
+}
+
+/* about section end */
