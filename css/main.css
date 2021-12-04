@@ -1,0 +1,104 @@
+body {
+    margin          : 0px;
+    background-color: firebrick;
+    height          : 5000px;
+    font-family     : "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color          : white;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.landing {
+    height             : 100vh;
+    position           : relative;
+    background-image   : linear-gradient(rgba(17, 20, 24, 0.8), rgba(17, 20, 24, 0.8)), url(/src/intro-bg.jpg);
+    background-size    : cover;
+    background-position: center 0 px;
+}
+
+.landing-nav {
+    display         : flex;
+    align-items     : center;
+    justify-content : left;
+    padding         : 20px;
+    width           : 100%;
+    box-sizing      : border-box;
+    position        : fixed;
+    background-image   : linear-gradient(rgba(17, 20, 24, 0.8), rgba(17, 20, 24, 0.8));
+}
+
+.landing-nav ul {
+    list-style     : none;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    position       : absolute;
+    left           : 50%;
+    padding        : 0px;
+    transform      : translateX(-50%);
+}
+
+.landing-nav ul{
+    color: #20c997;
+}
+/* problem it does not apply to the element in li>a ??????!!!!!!!!!! */
+
+.landing-nav ul li {
+    padding    : 10px 18px;
+    font-weight: 400;
+    font-size  : 16px;
+}
+
+.landing-nav ul li a:hover {
+    color: #20c997;
+}
+
+.landing-info {
+    display        : flex;
+    text-align     : center;
+    height         : 100vh;
+    justify-content: center;
+    align-items    : center;
+    font-size      : larger;
+    color          : white;
+}
+
+.landing-info h3 {
+    font-size  : 28px;
+    font-weight: 500;
+}
+
+.landing-info h1 {
+    font-size  : 64px;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.landing-info p {
+    font-size  : 21px;
+    font-weight: 400;
+}
+
+.landing-info button {
+    font-size  : 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: #20c997 solid;
+    color: #20c997;
+}
+
+.landing-info button:hover {
+    background-color: #20c997;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+/* when hover out the effect is done instantaneously */
+
