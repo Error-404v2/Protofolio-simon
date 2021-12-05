@@ -37,6 +37,45 @@ h3 span {
     margin: auto;
 }
 
+.width77 {
+    width : 77%;
+    margin: auto;
+}
+
+
+.width85 h2 {
+    font-size  : 36px;
+    font-weight: 600;
+    position   : relative;
+}
+
+.width77 h2 {
+    font-size  : 36px;
+    font-weight: 600;
+    position   : relative;
+}
+
+.width85 h2::after {
+    content         : "";
+    background-color: var(--greenish);
+    height          : 2px;
+    width           : 6%;
+    position        : absolute;
+    bottom          : -10;
+    left            : 50%;
+    transform       : translateX(-50%);
+}
+
+.width77 h2::after {
+    content         : "";
+    background-color: var(--greenish);
+    height          : 2px;
+    width           : 6%;
+    position        : absolute;
+    bottom          : -10;
+    left            : 50%;
+    transform       : translateX(-50%);
+}
 
 /* landing section start */
 .landing {
@@ -134,25 +173,7 @@ h3 span {
 
 /* about section start */
 .about {
-    padding: 40px 0px;
     padding: 4.5rem 0;
-}
-
-.about .width85 h2 {
-    font-size  : 36px;
-    font-weight: 600;
-    position   : relative;
-}
-
-.about .width85 h2::after {
-    content         : "";
-    background-color: var(--greenish);
-    height          : 2px;
-    width           : 6%;
-    position        : absolute;
-    bottom          : -10;
-    left            : 50%;
-    transform       : translateX(-50%);
 }
 
 .about .width85 footer {
@@ -168,8 +189,8 @@ h3 span {
 }
 
 .about-text article {
-    width     : 60%;
-    text-align: left;
+    width      : 60%;
+    text-align : left;
     line-height: 1.6;
 }
 
@@ -199,6 +220,11 @@ h3 span {
     border-radius   : 25px;
 }
 
+.about-text aside button:hover {
+    background-color: #1baa80;
+    border-color    : #1baa80;
+}
+
 .about-stats {
     display        : flex;
     justify-content: space-around;
@@ -212,3 +238,30 @@ h3 span {
 }
 
 /* about section end */
+
+/* services section start */
+.services {
+    padding: 4.5rem 0;
+}
+
+.services-table {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.services-table article {
+    width     : 48%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+article i {
+    font-size: 2rem;
+    margin-right: 30px;
+    color: var(--greenish);
+}
+/* services section end */
